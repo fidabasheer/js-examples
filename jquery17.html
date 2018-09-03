@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+ $(document).ready(()=>{
+    $("#field1").focus(()=>{
+        $("span").css({"display":"inline","color" : "red"}).fadeOut(3000);
+    });
+ });
+</script>
+</head>
+<body>
+        First Name: <input type="text" id='field1'><span style="display: none">
+            focus
+        </span>
+        <p>Last Name: <input type="password" id='field2'></p>
+       
+</body>
+</html>

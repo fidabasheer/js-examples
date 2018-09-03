@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+ $(document).ready(()=>{
+    $("#click").click(()=>{
+        $('.single').show();
+    });
+    $("#click").dblclick(()=>{
+        $('.double').show();
+    });
+});
+    
+    </script>
+</head>
+
+    
+
+<body>
+
+<p id='click'  >Click me!</p>
+<p class='single' style='display: none'>This is a click Event</p>
+<p class='double'  style='display: none'>This is a double-click Event</p></body>
+</html>
